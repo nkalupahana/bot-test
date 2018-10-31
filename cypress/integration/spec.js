@@ -1,10 +1,11 @@
 describe('Visits the App', function() {
     it('Visits the App', function() {
-        cy.visit("http://localhost:3000")
+        cy.visit("https://google.com")
         cy.wait(5000)
     })
-});
+})
 
+describe('Checks the App', function() {
     it('Checks Team Numbers (Basic)', function() {
         cy.get("#leftNumbers")
             .children("span[onclick]")
